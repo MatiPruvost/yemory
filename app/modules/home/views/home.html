@@ -1,0 +1,54 @@
+<div class="home">
+    <!-- =================== Navigation bar =================== -->
+    <header class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="navbar-brand visible-xs">
+                        Yemory
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-placeholder"></div>
+    <div class="content" role="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8
+                    col-lg-offset-3 col-lg-6">
+                    <ul class="list-group" >
+                        <li ng-repeat="element in elements"
+                            class="list-group-item">
+                            {{element.name}}
+                            <span class="glyphicon glyphicon-remove pull-right
+                                icon-delete"
+                                aria-hidden="true"
+                                ng-click="remove({{element.rowid}})">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.main -->
+
+    <footer class="footer fixed">
+        <div class="container">
+            <form>
+                <div class="input-group">
+                    <input type="text" class="form-control" ng-model="element">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-primary"
+                        ng-click="add()">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </footer>
+</div>

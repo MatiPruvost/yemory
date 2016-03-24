@@ -1,0 +1,60 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.home .content{
+  padding-top: 2px;
+  padding-bottom: 45px;
+}
+
+.home .footer{
+  position: fixed;
+  bottom: 0px;
+  margin-top: inherit;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.home .navbar-default {
+    background-color: #FFC107;
+    border-color: #FFA000;
+}
+
+.home .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #212121;
+}
+
+.home .navbar-default .navbar-brand, .navbar-default .navbar-brand {
+    color: #212121;
+}
+
+.home {
+    color: #212121;
+}
+
+.home .btn-primary {
+    color: #fff;
+    background-color: #727272;
+    border-color: #727272;
+}
+
+.home .footer {
+    border-top: 1px solid #FFA000;
+    background-color: #FFC107;
+}
+
+.home .form-control {
+    color: #212121;
+    border: 1px solid #FFF;
+}
+
+.home .list-group-item {
+     border: inherit  ;
+}
+
+.home .icon-delete {
+    color: #727272;
+    height: 30px;
+    width: 30px;
+    left: 16px;
+}
