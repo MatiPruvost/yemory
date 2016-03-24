@@ -5,8 +5,8 @@
 * 0.0.1
     * Minimal Viable Product
 
-
 ## Installation
+
 Yeoman
 ```
 $ npm install -g yo
@@ -14,6 +14,16 @@ $ npm install -g yo
 AngularJS Cordova generator
 ```
 npm install -g generator-angularjs-cordova
+```
+Android SDK. Please use this [guide](https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html)
+
+Cordova icon generator
+```
+npm install cordova-icon -g
+```
+Cordova splash generator
+```
+npm install cordova-splash -g
 ```
 
 ### Technologies:
@@ -28,11 +38,22 @@ This generator currently has not been tested for its compatibility with phonegap
 
 ## Getting Started
 
-Run
+Run the app on your browser
 ```
 grunt serve
 ```
-to run the app on your browser
+
+Build app
+```
+grunt build
+cordova build
+```
+
+Give the script +x permission, run
+```
+chmod +x hooks/after_prepare/cordova-icon.sh
+chmod +x hooks/after_prepare/cordova-splash.sh
+```
 
 ## License
 
