@@ -21,11 +21,11 @@
                     <ul class="list-group" >
                         <li ng-repeat="element in elements"
                             class="list-group-item">
-                            {{element.name}}
+                            {{element}}
                             <span class="glyphicon glyphicon-remove pull-right
                                 icon-delete"
                                 aria-hidden="true"
-                                ng-click="remove({{element.rowid}})">
+                                ng-click="remove('{{element}}')">
                             </span>
                         </li>
                     </ul>

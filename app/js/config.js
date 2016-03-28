@@ -10,7 +10,6 @@ var ApplicationConfiguration = (function() {
       'ngAnimate',
       'ngTouch',
       'ngSanitize',
-      'ngCordova',
       'ui.router',
       'ui.bootstrap',
       'ui.utils'];

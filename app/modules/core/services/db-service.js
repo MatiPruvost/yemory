@@ -113,7 +113,7 @@ angular
              */
             var open = function() {
                 if (window.cordova) {
-                    //device
+                    // device
                     db = $cordovaSQLite.openDB({ name: "yemory.db" });
                 }else{
                     // browser
@@ -172,7 +172,7 @@ angular
                 open: open,
                 removeElement: removeElement,
                 updateElement: updateElement
-            }
+            };
 
         }
     ]);
