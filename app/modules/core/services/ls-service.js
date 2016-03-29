@@ -19,11 +19,14 @@ angular
              */
             var add = function(element) {
                 var elements = get();
-                elements.push(element);
-                localStorage.setItem(
+                // Verify if the new element is not into elements
+                if (elements.indexOf(element) == -1){
+                  elements.push(element);
+                  localStorage.setItem(
                     "yemory.elements",
                     JSON.stringify(elements)
-                );
+                  );
+                }
                 return element;
             };
 

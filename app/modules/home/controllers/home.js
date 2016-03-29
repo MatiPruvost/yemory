@@ -27,7 +27,6 @@ angular
 
             // Remove a element from the list and the LS
             $scope.remove = function(element){
-                console.log(element)
                 LsService.remove(element);
                 getElements();
             };
