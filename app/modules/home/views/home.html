@@ -20,12 +20,16 @@
                     col-lg-offset-3 col-lg-6">
                     <ul class="list-group" >
                         <li ng-repeat="element in elements"
-                            class="list-group-item">
+                            class="list-group-item"
+                            ng-init="show=false"
+                            ng-swipe-right="show=true"
+                            ng-swipe-left="show=false">
                             {{element}}
                             <span class="glyphicon glyphicon-remove pull-right
                                 icon-delete"
                                 aria-hidden="true"
-                                ng-click="remove('{{element}}')">
+                                ng-click="remove('{{element}}')"
+                                ng-show="show">
                             </span>
                         </li>
                     </ul>
