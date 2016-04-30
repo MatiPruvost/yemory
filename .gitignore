@@ -8,6 +8,9 @@ node_modules/
 .idea/
 /docs/
 
+##########App##########
+keystore
+
 ##########Cordova##########
 www/
 
