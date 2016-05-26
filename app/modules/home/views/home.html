@@ -22,8 +22,7 @@
                         <li ng-repeat="element in elements"
                             class="list-group-item"
                             ng-init="show=false"
-                            ng-swipe-right="show=true"
-                            ng-swipe-left="show=false">
+                            ng-click="show=(show==true ? false : true)">
                             {{element}}
                             <span class="glyphicon glyphicon-remove pull-right
                                 icon-delete"
@@ -42,12 +41,11 @@
 
     <footer class="footer fixed">
         <div class="container">
-            <form>
+            <form ng-submit="add()">
                 <div class="input-group">
                     <input type="text" class="form-control" ng-model="element">
                     <div class="input-group-btn">
-                        <button type="button" class="btn btn-primary"
-                        ng-click="add()">
+                        <button type="submit" class="btn btn-primary">
                             <span class="glyphicon glyphicon-plus"></span>
                         </button>
                     </div>
